@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#480178"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Update Item"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/btnUpdateItem"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editItemDescription"
+        android:background="#480178"
+        android:gravity="center"
+        android:text="Update Item"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <EditText
+        android:id="@+id/editItemName"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="50dp"
+        android:hint="Enter item name"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editItemCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemId"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editItemCategory"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="50dp"
+        android:hint="Enter category"
+        android:inputType="text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editItemPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemName"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editItemPrice"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="50dp"
+        android:hint="Enter price"
+        android:textStyle="bold"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/editItemDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemCategory"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editItemId"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="50dp"
+        android:hint="Enter item ID"
+        android:inputType="number"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308" />
+
+    <EditText
+        android:id="@+id/editItemDescription"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="50dp"
+        android:hint="Enter description"
+        android:textStyle="bold"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdateItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemPrice"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/viewItemButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="#480178"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_below="@id/editItemDescription"
+        android:onClick="goToViewItem"
+        android:text="View Items in Store"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="135dp"
+        android:layout_height="112dp"
+        app:layout_constraintBottom_toTopOf="@+id/editItemId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/baseline_update_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
